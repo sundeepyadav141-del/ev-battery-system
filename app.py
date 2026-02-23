@@ -192,7 +192,6 @@ for rec in recommendations:
 # Footer
 st.markdown("---")
 st.markdown("**EV Battery Intelligence System** | Built for the Automotive Industry")
-```
 
 7. **Press Ctrl+S** to save
 
@@ -211,3 +210,4 @@ st.markdown("**EV Battery Intelligence System** | Built for the Automotive Indus
 5. **Paste ONLY this one line:**
 ```
 streamlit
+
