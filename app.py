@@ -2,7 +2,6 @@ import streamlit as st
 from ev_battery_system import EVBatterySystem
 
 st.set_page_config(page_title="EV Battery Intelligence System", page_icon="🔋", layout="wide")
-
 st.title("🔋 EV Battery Intelligence System")
 st.markdown("### Advanced Battery Management & Range Optimization")
 st.markdown("---")
@@ -47,7 +46,8 @@ with col3: st.metric("Available Energy", f"{range_data['available_energy_kwh']} 
 st.markdown("---")
 st.header("⚡ Charging Analysis")
 col1, col2 = st.columns(2)
-with col1: target_charge = st.slider("Target Charge (%)", 0, 100, 100)
+with col1:
+    target_charge = st.slider("Target Charge (%)", 0, 100, 100)
 with col2:
     charger_type = st.selectbox("Charger Type", ["Home (3.7 kW)", "Fast Home (7.4 kW)", "DC Fast (50 kW)", "Ultra-Fast (150 kW)"])
 
